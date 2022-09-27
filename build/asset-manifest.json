@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/Store_app/static/js/main.1713ebf8.chunk.js",
-    "main.js.map": "/Store_app/static/js/main.1713ebf8.chunk.js.map",
-    "runtime-main.js": "/Store_app/static/js/runtime-main.4ca5f74a.js",
-    "runtime-main.js.map": "/Store_app/static/js/runtime-main.4ca5f74a.js.map",
-    "static/js/2.19b996ec.chunk.js": "/Store_app/static/js/2.19b996ec.chunk.js",
-    "static/js/2.19b996ec.chunk.js.map": "/Store_app/static/js/2.19b996ec.chunk.js.map",
-    "index.html": "/Store_app/index.html",
-    "static/js/2.19b996ec.chunk.js.LICENSE.txt": "/Store_app/static/js/2.19b996ec.chunk.js.LICENSE.txt"
+    "main.js": "/Ladies/static/js/main.a6bbb398.chunk.js",
+    "main.js.map": "/Ladies/static/js/main.a6bbb398.chunk.js.map",
+    "runtime-main.js": "/Ladies/static/js/runtime-main.da077c60.js",
+    "runtime-main.js.map": "/Ladies/static/js/runtime-main.da077c60.js.map",
+    "static/js/2.661a7d99.chunk.js": "/Ladies/static/js/2.661a7d99.chunk.js",
+    "static/js/2.661a7d99.chunk.js.map": "/Ladies/static/js/2.661a7d99.chunk.js.map",
+    "index.html": "/Ladies/index.html",
+    "static/js/2.661a7d99.chunk.js.LICENSE.txt": "/Ladies/static/js/2.661a7d99.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.4ca5f74a.js",
-    "static/js/2.19b996ec.chunk.js",
-    "static/js/main.1713ebf8.chunk.js"
+    "static/js/runtime-main.da077c60.js",
+    "static/js/2.661a7d99.chunk.js",
+    "static/js/main.a6bbb398.chunk.js"
   ]
 }
