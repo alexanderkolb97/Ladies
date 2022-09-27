@@ -7,6 +7,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import './App.css';
 
 export const Context = React.createContext();
 
