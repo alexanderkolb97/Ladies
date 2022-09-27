@@ -20,7 +20,7 @@ function Header() {
     return (
         <header className="header">
             <div className="logo">
-                <a href="/"><img src={Logo} alt="logo"/></a>
+                <a href="/Ladies"><img src={Logo} alt="logo"/></a>
             </div>
             <div className="search_wrapper">
                 <input onChange={searchProducts} type="text" name="search" placeholder="Search" />
