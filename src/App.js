@@ -3,7 +3,7 @@ import Header from './Header';
 import Catalog from './Catalog';
 import Cart from './Cart';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
