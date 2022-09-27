@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import {Context} from './App';
 
 function Products() {
-    const {dataStatus, sortStatus, searchStatus, setCartNumber, itemsIds, setItemsIds} = useContext(Context);
+    const {dataStatus, sortStatus, searchStatus, setCartNumber, itemsIds} = useContext(Context);
     const [productsHtml, setProductsHtml] = useState('');
 
     const [itemId, setItemId] = useState();
@@ -14,7 +14,7 @@ function Products() {
         data = JSON.parse(localStorage.getItem('data'));
         data.sort((a, b) => +a.price - +b.price);
         
-        if(direction == 'desc') data.reverse();
+        if(direction === 'desc') data.reverse();
 
         show()
 
@@ -23,7 +23,7 @@ function Products() {
     const search = function(query) {
         data = JSON.parse(localStorage.getItem('data'));
         data = data.filter(item => {
-            if(item.title.indexOf(query) != -1) return item
+            if(item.title.indexOf(query) !== -1) return item
         })
 
         show()
@@ -35,11 +35,11 @@ function Products() {
     }
 
     const show = function() {
-        if(data.length == 0) data = JSON.parse(localStorage.getItem('data'));
+        if(data.length === 0) data = JSON.parse(localStorage.getItem('data'));
         let list = data.map((item, index) => {
             return (
                 <li id={index + 1} key={index} className="list_item">
-                    <img src={item.image}></img>
+                    <img src={item.image} alt="item_img"></img>
                     <div className="list_item_info">
                         <p className="info_title">{item.title}</p>
                         <p className="info_category">{item.category}</p>
@@ -59,9 +59,9 @@ function Products() {
             show()
         }
 
-        if(sortStatus != '') sort(sortStatus);
+        if(sortStatus !== '') sort(sortStatus);
 
-        if(searchStatus != '') {
+        if(searchStatus !== '') {
             search(searchStatus)
         } else if(dataStatus) {
             show()

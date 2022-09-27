@@ -4,10 +4,8 @@ import Title from './Title';
 function Catalog() {
     return (
         <>
-        <Title />
-        <div className="catalog">
-            <Products/>
-        </div>
+            <Title />
+            <div className="catalog"><Products/></div>
         </>
     )
 }

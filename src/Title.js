@@ -5,7 +5,7 @@ function Title() {
     const {sortStatus, setSortstatus} = useContext(Context);
 
     const sortProducts = function() {
-        if(sortStatus != 'desc') {
+        if(sortStatus !== 'desc') {
             setSortstatus('desc') 
         } else {
             setSortstatus('asc')
@@ -32,7 +32,7 @@ function Title() {
         let marginLeft = 0;
 
         const next = () => {
-            if(count == items.length - 5) return
+            if(count === items.length - 5) return
             marginLeft = itemFirst.style.marginLeft || 0;
             marginLeft = Math.abs(parseInt(marginLeft));
             marginLeft += addMargin;
@@ -51,7 +51,7 @@ function Title() {
 
         }
 
-        if(dir == "prev") {
+        if(dir === "prev") {
             prev()
         } else {
             next()

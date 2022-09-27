@@ -2,7 +2,7 @@ import React, {useState, useEffect, useContext} from 'react';
 import {Context} from './App';
 
 function Cart() {
-    const {setCartNumber, itemsIds, setItemsIds, cartNumber} = useContext(Context);
+    const {setCartNumber, itemsIds, setItemsIds} = useContext(Context);
 
     let items = JSON.parse(localStorage.getItem('data'));
 
@@ -10,7 +10,7 @@ function Cart() {
         let count = 0;
 
         itemsIds.forEach(item => {
-            if(+item == +id) count++
+            if(+item === +id) count++
         })
 
         return count
@@ -36,7 +36,7 @@ function Cart() {
         console.log(items)
         let id = e.target.closest('li').id;
         let index = items.indexOf(id);
-        if(index != -1) items.splice(index, 1);
+        if(index !== -1) items.splice(index, 1);
         setItemsIds(items);
         setCartNumber(items.length)
         setList(listHtml())
@@ -46,7 +46,7 @@ function Cart() {
         let cartItems = [];
 
         cartItems = items.filter((item) => {
-            return itemsIds.indexOf(String(item.id)) != -1 ? item : false
+            return itemsIds.indexOf(String(item.id)) !== -1 ? item : false
         })
 
         let html = cartItems.map((item, index) => {
@@ -54,7 +54,7 @@ function Cart() {
 
             return (
                 <li id={item.id} key={index} className="item">
-                    <img src={item.image} className="cart_img"></img>
+                    <img src={item.image} className="cart_img" alt="cart_img"></img>
                         <div className="list_item_info">
                             <p className="info_title">{item.title}</p>
                             <p className="info_category">{item.category}</p>

@@ -1,24 +1,19 @@
 import {Context} from './App';
-import {useContext, useEffect, useState} from 'react';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
+import {useContext} from 'react';
+import {Link} from "react-router-dom";
 
 function Header() {
     const {setSearchstatus, cartNumber} = useContext(Context);
 
-    const searchProducts = function(e) {
-        if(e.target.value.length < 3) {
-            setSearchstatus('')
+    const searchProducts = function (e) {
+      if (e.target.value.length < 3) {
+        setSearchstatus('');
 
-            return
-        }
+        return;
+      }
 
-        setSearchstatus(e.target.value)
-    }
+      setSearchstatus(e.target.value);
+    };
 
     return (
         <header className="header">

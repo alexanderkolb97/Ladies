@@ -1,13 +1,11 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import Header from './Header';
-import Title from './Title';
 import Catalog from './Catalog';
 import Cart from './Cart';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 
 export const Context = React.createContext();
